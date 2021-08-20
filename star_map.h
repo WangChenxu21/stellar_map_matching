@@ -10,13 +10,13 @@
 
 class StarMap {
 public:
-	bool CreateStarMap(StarInfo* star_of_starmap);
-private:
-	int julian_day_; //儒略日
-	LPBYTE img_data_; //图像数据
-	PBITMAPINFO img_info_; //图像信息头
-	int star_counter_[13]; //星等分布统计数组
+    bool CreateStarMap(StarInfo* star_of_starmap);
 
+private:
+    int julian_day_; //儒略日
+    LPBYTE img_data_; //图像数据
+    PBITMAPINFO img_info_; //图像信息头
+    int star_counter_[13]; //星等分布统计数组
 };
 
 #endif
